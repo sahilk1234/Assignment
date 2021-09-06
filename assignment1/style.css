@@ -1,0 +1,159 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    font-family: Georgia;
+}
+
+.container
+{
+    background-image:url(photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+    margin: 10px;
+    height: 100vh;
+    margin-bottom: 200px;
+    
+    color: #006eff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.text
+{
+    border-top:5px solid red;
+    border-bottom: 5px solid red;
+    background-color: rgba(207, 205, 205, 0.685);
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    width: 300px;
+    line-height: 1.4;
+    height: 150px;
+    padding: 40px;  
+}
+/* ********************** */
+/* preserve section */
+/* ********************** */
+.preserve
+{
+    background-color: black;
+    color: #fff;
+}
+.preserve-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.preserve
+{
+    width: 250px;
+    height: 200px;
+    padding: 40px;
+    padding-left: 0;
+    padding-right: 80px;
+    box-shadow: 0 0 24px #0099ff;
+}
+
+/* ********************** */
+/* table section */
+/* ********************** */
+
+.table-caption
+{
+    color:#006eff;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 30px;
+}
+.section-table
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+
+}
+.table
+{
+    width: 800px;
+    margin-top: 100px;
+    border-collapse: collapse;
+   
+}
+.table-head th
+{ 
+    background-color: #0691b4;
+    color:#fff;
+    width: 25%;
+}
+.table-body tr:nth-child(odd)
+{
+    background-color:#e9ecef;
+}
+.table-body tr:nth-child(even)
+{
+    background-color:#f8f9fa;
+}
+th,td
+{
+    padding: 16px 24px;
+    text-align: left;
+}
+
+
+/* ********************** */
+/* link section */
+/* ********************** */
+
+.link-section
+{
+    margin-bottom: 200px;
+}
+.order-list
+{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    list-style: none;
+}
+.link
+{
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #0691b4;
+}
+
+
+
+
+
+/* ********************** */
+/* iframe section */
+/* ********************** */
+
+.iframe-section
+{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    color: #006eff;
+    
+}
+.iframe
+{
+    width: 1000px;
+    height: 400px;
+    border:2px solid gray;
+}
