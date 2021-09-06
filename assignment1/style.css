@@ -7,7 +7,9 @@ body
 {
     font-family: Georgia;
 }
-
+/* ********************** */
+/* 1 st page */
+/* ********************** */
 .container
 {
     background-image:url(photo.jpg);
@@ -50,7 +52,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 .preserve
 {
@@ -115,7 +117,7 @@ th,td
 
 .link-section
 {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 .order-list
 {
