@@ -18,6 +18,7 @@ html, body {
     background-repeat: no-repeat;
     background-attachment:fixed ;
     height: 100vh;
+    position: relative;
 }
 
 .head
@@ -61,7 +62,13 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-
+.text-section
+{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
 .text-container
 {
     background-color:black;
@@ -69,13 +76,10 @@ html, body {
     height: 160px;
     opacity: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 35%;
-    left:40%;
+    justify-content:center;
+    align-items:center;
     border: 1px solid #fff;
- 
+    
 }
 .text-logo
 {
