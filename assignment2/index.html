@@ -14,51 +14,47 @@
 </head>
 
 <body>
-    <section class="logo-page" id="page-1">
-        <header class="head">
-            <div class="head-img">
-                <img class="logo-icon" src="images/logo.png" alt="Logo image">
-            </div>
-            <div class="head-nav">
-                <nav class="navigation">
-                    <a class="nav-link" href="#page-1">Home</a>
-                    <a class="nav-link" href="#page-2">About</a>
-                    <a class="nav-link" href="#page-3">Contact us</a>
-                </nav>
-            </div>
+    <section class="home-section" id="home-page">
+        <header class="home-header">
+            <img class="home-logo-icon" src="images/logo.png" alt="Logo image">
+            <nav class="home-navigation">
+                <a class="nav-link" href="#home-page">Home</a>
+                <a class="nav-link" href="#aboutus-page">About</a>
+                <a class="nav-link" href="#contactus-page">Contact us</a>
+            </nav>
         </header>
-        <section class="text-section">
-            <div class="text-container">
-                <p class="text-logo">Hello!</p>
-            </div>
+        <section class="home-text-section">
+            <div class="home-text-container">
+                <p class="home-text-logo">Hello!</p>
+            </div>  
         </section>
-        <footer class="footer">
-            <div class="footer-container">
-                <a class="footer-link" href="#page-1">Home</a>
-                <a class="footer-link" href="#page-2">About</a>
-                <a class="footer-link" href="#page-3">Contact us</a>
+        <footer class="page-footer">
+            <div class="page-footer-container">
+                <a class="footer-link" href="#home-page">Home</a>
+                <a class="footer-link" href="#aboutus-page">About</a>
+                <a class="footer-link" href="#contactus-page">Contact</a>
             </div>
         </footer>
     </section>
-    <section class="section-about" id="page-2">
-        <div class="container">
-            <div class="text">
-                <h2>About Us</h2>
-            </div>
-            <div class="image"><img src="images/aboutus.jpg" alt="aboutus image"></div>
+
+    <section class="aboutus-section" id="aboutus-page">
+        <div class="aboutus-title">
+            <h2>About Us</h2>
         </div>
+        <img class="aboutus-image" src="images/aboutus.jpg" alt="aboutus image">
     </section>
 
-    <section class="contact-us-section" id="page-3">
-        <div class="text-contact">
+    <section class="contactus-section" id="contactus-page">
+        <div class="contactus-title">
             <h2>Contact-us</h2>
         </div>
-        <form class="form">
+        <form class="contactus-form">
             <input class="input-text" type="text" name="Name" placeholder="Name">
             <input class="input-text" type="email" name="email" placeholder="Email">
-            <input class="input-text" type="number" name="number" placeholder="Mobile">
-            <input class="submit" type="submit">
+            <input class="input-text" type="tel" name="number" placeholder="Mobile">
+            <input class="input-submit" type="submit">
         </form>
+
     </section>
 
 </body>
