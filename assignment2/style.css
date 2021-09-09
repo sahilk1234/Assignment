@@ -160,7 +160,8 @@ html, body {
 
 .contactus-form
 {
-    height: 260px;
+   
+    padding-bottom: 100px;
     width: 100%;
     background-color: #d6cfcf;
     position:absolute;
@@ -174,7 +175,7 @@ html, body {
 .input-text
 {
     width: 60%;
-    padding:9px 0;
+    padding:8px 0;
     border: none;
     border-radius:20px;
     text-indent: 10px;
