@@ -19,6 +19,11 @@ html, body {
     height: 100vh;      
     position: relative;
 }
+
+.home-header
+{
+    position: relative;
+}
 .home-logo-icon
 {
     width: 90px;
@@ -34,11 +39,6 @@ html, body {
     list-style: none;
 }
    
-
-.home-header
-{
-    position: relative;
-}
 
 .nav-link:visited,.nav-link:link
 {
@@ -174,7 +174,7 @@ html, body {
 .input-text
 {
     width: 60%;
-    height: 30px;
+    padding:9px 0;
     border: none;
     border-radius:20px;
     text-indent: 10px;
@@ -186,8 +186,8 @@ html, body {
 
 .input-submit
 {
-    width: 90px;
-    height: 35px;
+   
+    padding:8px 16px;
     background-color: #FFA602;
     border: none;
     border-radius:200px;
@@ -199,6 +199,5 @@ html, body {
 }   
 .input-submit:hover
 {
-    background-color: #e03131; 
-     
+    background-color: #e03131;     
 }
