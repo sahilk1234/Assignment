@@ -7,6 +7,7 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     background-color:#000000;
 }
+
 /* ***************** */
 /* **home page */
 /* ******************* */
@@ -15,7 +16,7 @@ html, body {
 {
     background:url(images/home.jpg) center no-repeat ;
     background-size: cover;
-    height: 100vh;
+    height: 100vh;      
     position: relative;
 }
 .home-logo-icon
@@ -45,7 +46,7 @@ html, body {
     padding:10px 10px;
     color:#212529;
     background-color: #FFA602;
-    margin-right: -4px;
+    margin-right:-4px;
 }
 
 
@@ -67,16 +68,15 @@ html, body {
 {
     background-color:#111;
     opacity: 50%;
-    border: 1px solid #fff;
-    
+    border:1px solid #fff;   
 }
 
 .home-text-logo
 {
     font-size: 58px;
     color: #fff;
-    padding: 40px 35px;
-
+    padding:44px 38px;
+  
 }
 
 .page-footer
@@ -199,6 +199,6 @@ html, body {
 }   
 .input-submit:hover
 {
-    background-color: #e8590c;
-
+    background-color: #e03131; 
+     
 }
