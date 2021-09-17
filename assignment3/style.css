@@ -251,8 +251,7 @@ body {
     position: absolute;
     height: 2px;
     background: #fff;
-    margin-top: 25px;
-    margin-left: -65px;
+    margin: 25px 0 0 -65px;
 }
 
 .footer-text {
@@ -280,6 +279,11 @@ body {
     background: #6E81D0;
 }
 
+/* 
+/////////////////
+///common header//
+/////////////// */
+
 .heading {
     text-align: center;
     font-weight: 500;
@@ -293,8 +297,7 @@ body {
     position: absolute;
     height: 2px;
     background: #111;
-    margin-top: 25px;
-    margin-left: -65px;
+    margin: 25px 0 0 -65px;
 }
 
 /* 
@@ -329,20 +332,23 @@ body {
 ////////////// */
 
 @media only screen and (max-width: 600px) {
+    /* /////////////////
+    //home page //
+    //////////////// */
     .home-container {
         position: static;
         z-index: 0;
     }
+    /* /////////////////
+    //page 2 //
+    //////////////// */
     .page2-container-1 {
         height: 100vh;
-        width: 100%;
         flex-direction: column;
     }
     .page2-container-2 {
         height: 100vh;
-        width: 100%;
         flex-direction: column;
-        
     }
     .page2-container-text-1 {
         right: 30%;
@@ -356,9 +362,6 @@ body {
     .page2-container-car {
         height: 50%;
         width: 100%;
-    }
-    .car-image {
-        position: none;
     }
     .heading-box-1 {
         padding: 30px;
@@ -374,11 +377,12 @@ body {
         transform: translate(0, 150%);
         width: 100%
     }
+    /* /////////////////
+    //page 3 //
+    //////////////// */
     .page3-container-1 {
         height: 100vh;
-        width: 100%;
         flex-direction: column;
-    
     }
     .page3-container-text-1 {
         right: 30%;
