@@ -81,15 +81,18 @@ html, body {
 
 .page-footer
 {
-    z-index: 1;
+    z-index: 4;
     position: fixed;
-    bottom: 0;    
     width: 100%;
+    bottom: 0;
+
 }
 
 .page-footer-container
 {
-    margin:0 200px;
+    box-sizing: border-box;
+    width: 65%;
+    margin:0 auto;   
     background-color: #fff;
     padding:12px 30px;
     font-size: 14px;
@@ -108,7 +111,8 @@ html, body {
 
 .aboutus-section
 {
-    margin: 0 200px;
+    width:65%;
+    margin:0 auto;
     height: 100vh;
     background-color: #d6cfcf;
     position: relative;
@@ -125,6 +129,7 @@ html, body {
 
 .aboutus-image
 {
+    z-index: 1;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -145,7 +150,8 @@ html, body {
 .contactus-section
 {
     height:100vh;
-    margin: 0 200px;
+    width: 65%;
+    margin:0 auto;
     position: relative; 
 }
 
