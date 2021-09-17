@@ -123,8 +123,9 @@ body {
 
 .heading-box-1 {
     padding: 30px;
-    height: 150px;
-    transform: translate(-365px, 60px);
+    align-self: center;
+
+    transform: translateX(-365px);
     width: 400px;
     z-index: 1;
     background: #fff;
@@ -134,8 +135,8 @@ body {
 
 .heading-box-2 {
     padding: 30px;
-    height: 150px;
-    transform: translate(620px, 60px);
+    align-self: center;
+    transform: translateX(620px);
     width: 400px;
     z-index: 1;
     background: #fffafa;
