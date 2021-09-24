@@ -25,10 +25,9 @@
     <div class="menu">
         <div class="menu-item">
             <p>Menu</p>
-            <a class="close-menu">
-                <input class="close-menu-check-box" type="checkbox">
+            <button onclick="myFunction()" id="menu-close">
                 <ion-icon name="close-outline"></ion-icon>
-            </a>
+            </button>
         </div>
         <div class="menu-item">
             <p>Devices</p>
@@ -44,9 +43,9 @@
         </div>
         <div class="menu-item">
             <p>Accessories</p>
-            <button>
+           
                 <ion-icon name="chevron-forward-outline"></ion-icon>
-            </button>
+           
         </div>
 
     </div>
@@ -110,7 +109,7 @@
                         <a class="signin-box-heading" href="#">Forgot User ID?</a>
                     </div>
                 </div>
-                <button class="header-button">
+                <button onclick="myFunction()" class="header-button">
                     <div class="header-button-logo"></div>
                 </button>
             </div>
@@ -120,7 +119,7 @@
                 <button>Devices</button>
                 <ion-icon class="dropdown-icon" name="chevron-down-outline"></ion-icon>
                 <div class="dropdown-content1" id="myDropdown1">
-                    <a href="#">Business Radios
+                    <a class="dropdown-first" href="#">Business Radios
                         <div class="dropdown-content2" id="myDropdown1">
                             <a href="#">Two-Way Radio Accessories</a>
                             <a href="#">BodyCameraAccessories</a>
