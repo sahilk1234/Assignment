@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Motorola home page</title>
+
+</head>
+
+<body>
+    <div class="chat-icon">
+        <ion-icon name="chatbox-outline"></ion-icon>
+    </div>
+    <div class="walkme-card">
+        <div class="walkme-card-icon">
+            <ion-icon name="help-outline"></ion-icon>
+        </div>
+        <div class="walkme-card-text">
+            <p>Walk Me Through</p>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-item">
+            <p>Menu</p>
+            <a class="close-menu">
+                <input class="close-menu-check-box" type="checkbox">
+                <ion-icon name="close-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="menu-item">
+            <p>Devices</p>
+            <button>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+        </div>
+        <div class="menu-item">
+            <p>Broadband Services</p>
+            <button>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+        </div>
+        <div class="menu-item">
+            <p>Accessories</p>
+            <button>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+        </div>
+
+    </div>
+    <header class="header-section">
+        <div class="header-container">
+            <div class="header-logo">
+                <img class="header-logo-image" src="/Images/logo.png" alt="logo">
+            </div>
+            <div class="header-links">
+                <a class="header-link" href="#">Explore</a>
+                <a class="header-link" href="#">Shop</a>
+                <a class="header-link" href="#">Customer Hub</a>
+            </div>
+            <div class="header-search">
+                <form class="header-search-form">
+                    <input class="header-search-input" type="text" name="search"
+                        placeholder="What are you looking for?">
+                    <div class="header-search-tooltip">
+                        <span>Enter a value in the search box to find your product. You can select from the suggestions
+                            listed below the search box, or press enter to see a list of all items matching your search
+                            criteria.
+                        </span>
+                    </div>
+                    <button class="header-search-btn">
+                        <ion-icon class="home-search-icon" name="search-outline"></ion-icon>
+                    </button>
+                </form>
+            </div>
+            <div class="header-logos">
+                <div class="header-icon-link">
+                    <ion-icon class="header-icon" name="help-circle-outline"></ion-icon>
+                    <button class="header-btn">Support</button>
+                </div>
+                <div class="header-icon-link">
+                    <ion-icon class="header-icon" name="apps"></ion-icon>
+                    <button class="header-btn">Quick links</button>
+                </div>
+                <div class="header-icon-link header-icon-cart">
+                    <ion-icon class="header-icon " name="cart"></ion-icon>
+                    <button class="header-btn">My Cart</button>
+                    <div class="cart-box">
+                        <div class="cart-box-icon">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+                        <div class="cart-box-text">
+                            <p>Your shopping cart is empty</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="header-icon-link">
+                    <ion-icon class="header-icon" name="person-outline"></ion-icon>
+                    <button class="header-btn header-btn-signin" id="sign-in-btn" onclick="myFunction()">
+                        Sign in
+                    </button>
+                    <div class="signin-box">
+                        <p class="signin-box-heading">Sign in</p>
+                        <p class="signin-box-text">Enter your email (user ID)</p>
+                        <input type="email" placeholder="example@company.com">
+                        <button>continue</button>
+                        <a class="signin-box-heading" href="#">Forgot User ID?</a>
+                    </div>
+                </div>
+                <button class="header-button">
+                    <div class="header-button-logo"></div>
+                </button>
+            </div>
+        </div>
+        <div class="header-dropdown-menu">
+            <div class="header-dropdown-item">
+                <button>Devices</button>
+                <ion-icon class="dropdown-icon" name="chevron-down-outline"></ion-icon>
+                <div class="dropdown-content1" id="myDropdown1">
+                    <a href="#">Business Radios
+                        <div class="dropdown-content2" id="myDropdown1">
+                            <a href="#">Two-Way Radio Accessories</a>
+                            <a href="#">BodyCameraAccessories</a>
+                            <a href="#">Other Accessories</a>
+                        </div>
+                    </a>
+                    <a href="#">WALKABOUT® Walkie Talkies</a>
+                    <a href="#">oadband Push-to-Talk</a>
+                </div>
+            </div>
+            <div class="header-dropdown-item">
+                <button>Accessories</button>
+                <ion-icon class="dropdown-icon" name="chevron-down-outline"></ion-icon>
+                <div class="dropdown-content1" id="myDropdown1">
+                    <a href="#">Two-Way Radio Accessories</a>
+                    <a href="#">BodyCameraAccessories</a>
+                    <a href="#">Other Accessories</a>
+                </div>
+            </div>
+            <div class="header-dropdown-item">
+                <button>Software & Services</button>
+                <ion-icon class="dropdown-icon" name="chevron-down-outline"></ion-icon>
+                <div class="dropdown-content1" id="myDropdown1">
+                    <a href="#">Software</a>
+                    <a href="#">WAVE Broadband PTT</a>
+                </div>
+            </div>
+            <div class="header-dropdown-item hdi-4">
+                <button>More</button>
+                <ion-icon class="dropdown-icon" name="chevron-down-outline"></ion-icon>
+                <div class="dropdown-content1 dropdown-more" id="myDropdown1">
+                    <a href="#">Quick Order</a>
+                    <a href="#">Saved card</a>
+                    <a href="#">favorites Lists</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section-carousel">
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <img class="carousel-image" src="/Images/img1.jpg">
+                <div class="carousel-text">
+                    <h1>Lorem ipsum, dolor sit amet consectetur</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sapiente vero ducimus modi!
+                        Nulla similique</p>
+                    <a href="#">Shop walkie talkie</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-image" src="Images/img2.jpg">
+                <div class="carousel-text">
+                    <h1>Lorem ipsum, dolor sit amet consectetur</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sapiente vero ducimus modi!
+                        Nulla similique</p>
+                    <a href="#">Shop walkie talkie</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-image" src="Images/img3.jpg">
+                <div class="carousel-text">
+                    <h1>Lorem ipsum, dolor sit amet consectetur</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sapiente vero ducimus modi!
+                        Nulla similique</p>
+                    <a href="#">Shop walkie talkie</a>
+                </div>
+            </div>
+            <div class="dot-naviagtion">
+                <button class="dot" onclick='currentSlide(1)'>&nbsp;</button>
+                <button class="dot" onclick='currentSlide(2)'>&nbsp;</button>
+                <button class="dot" onclick='currentSlide(3)'>&nbsp;</button>
+            </div>
+        </div>
+    </section>
+    <section class="section-shop">
+        <div class="shop-container1">
+            <div class="shop-qucikorder">
+                <h2 class="secondary-heading">Quick Order</h2>
+                <p class="shop-text">Quickly add products to your cart by entering product IDs. You will be able to
+                    enter these manually or through spreadsheet import.</p>
+                <a class="shop-link" href="#">launch quick Order</a>
+            </div>
+        </div>
+        <div class="shop-container2">
+            <div class="shop-radiomodel">
+                <h2 class="secondary-heading">Shop by two-way radio model</h2>
+                <p class="shop-text">Easily shop for accessories and replacement parts by selecting the radio of your
+                    choice below.</p>
+                <select name="select-radio" class="radio-dropdown">
+                    <option value="Select Radio">Select Radio</option>
+                    <option value="Select Radio">A8</option>
+                    <option>A8</option>
+                    <option value=""> ANDROSSLR8000</option>
+                    <option value="">APX1000</option>
+                    <option value="">APX1500</option>
+                    <option value="">APX1500ENH</option>
+                    <option value="">APX2000</option>
+                    <option value="">APX2500</option>
+                    <option value="">APX2500ENH</option>
+                    <option value="">APX3000</option>
+                    <option value="">APX4000</option>
+                    <option value="">APX4000XH</option>
+                    <option value="">APX4500</option>
+                    <option value="">APX4500ENH</option>
+                    <option value="">APX5000</option>
+                </select>
+                <div class="shop-links">
+                    <a class="shop-link shop-replcement-link" href="#">replacement part</a>
+                    <a class="shop-link" href="#">shop accessories</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-accessories">
+        <div class="acc-container">
+            <div class="acc-container-box">
+                <h2>Power-Up Your Two-Way Radio Fleet</h2>
+                <p>Whether low on battery life, in need of a charge, or requiring a replacement antenna, stock up on
+                    Motorola Original™ two-way radio accessories to ensure your fleet is operating at their highest
+                    level of performance.</p>
+            </div>
+            <div class="image-container">
+                <img class="image-container-image" src="/Images/img8.jpg" alt="walkie talkie">
+            </div>
+            <div class="acc-products">
+                <div class="acc-productcard">
+                    <div class="acc-image-container">
+                        <img class="acc-image" src="Images/img5.jpg" alt="wireless">
+                    </div>
+                    <h3>Mission Critical Wireless (MCW) RSM kit, 3.5mm</h3>
+                    <p>$300.00</p>
+                    <div class="acc-viewdetails">
+                        <a href="#">View details</a>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="acc-productcard">
+                    <div class="acc-image-container productcard-2">
+                        <img class="acc-image" src="Images/img6.jpg" alt="battery">
+                    </div>
+                    <h3>IMPRES™2 Li-Ion Battery 2250 mAh, IP68, -20C</h3>
+                    <p>$146.00</p>
+                    <div class="acc-viewdetails">
+                        <a href="#">View details</a>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="acc-productcard">
+                    <div class="acc-image-container productcard-3">
+                        <img class="acc-image" src="Images/img7.jpg" alt="Earpiece">
+                    </div>
+                    <h3>Receive-Only Earpiece With Translucent Tube</h3>
+                    <p>$58.00</p>
+                    <div class="acc-viewdetails">
+                        <a href="#">View details</a>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="section-footer">
+        <div class="footer-1">
+            <div class="footer-logos">
+                <img src="/Images/logo.png" alt="logo">
+                <div class="footer-logo-box">
+                    <span>Join the Conversation:</span>
+                    <ion-icon class="footer-icon" name="logo-facebook"></ion-icon>
+                    <ion-icon class="footer-icon" name="logo-twitter"></ion-icon>
+                    <ion-icon class="footer-icon" name="logo-linkedin"></ion-icon>
+                    <ion-icon class="footer-icon" name="logo-youtube"></ion-icon>
+                    <ion-icon class="footer-icon" name="logo-instagram"></ion-icon>
+                </div>
+            </div>
+            <p>
+                MOTOROLA, MOTO, MOTOROLA SOLUTIONS and the Stylized M Logo are trademarks or registered trademarks of
+                Motorola Trademark Holdings, LLC and are used under license. All other trademarks are the property of
+                their respective owners.
+            </p>
+        </div>
+        <div class="footer-2">
+            <p>
+                © 2021 Motorola Solutions Inc. All rights reserved.
+            </p>
+            <div class="footer-links">
+                <a href="#">
+                    Privacy
+                </a>
+                <a href="#">
+                    Terms of Use
+                </a>
+                <a href="">
+                    Cookie Preferences
+                </a>
+                <a href="#">
+                    Do Not Sell My Personal Information
+                </a>
+                <a href="#">
+                    Communication Preferences
+                </a>
+                <a href="#">
+                    Shipping & Returns
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
