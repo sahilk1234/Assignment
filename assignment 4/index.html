@@ -22,32 +22,15 @@
             <p>Walk Me Through</p>
         </div>
     </div>
-    <div class="menu">
-        <div class="menu-item">
-            <p>Menu</p>
-            <button onclick="myFunction()" id="menu-close">
-                <ion-icon name="close-outline"></ion-icon>
-            </button>
-        </div>
-        <div class="menu-item">
-            <p>Devices</p>
-            <button>
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-            </button>
-        </div>
-        <div class="menu-item">
-            <p>Broadband Services</p>
-            <button>
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-            </button>
-        </div>
-        <div class="menu-item">
-            <p>Accessories</p>
-           
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-           
-        </div>
 
+    <div class="side-menu">
+
+        <div class="menu-name">
+            <p>Menu</p>
+            <button onclick="closemenu();" id="menu-close">
+                <ion-icon class="side-menu-icon" name="close-outline"></ion-icon>
+            </button>
+        </div>
     </div>
     <header class="header-section">
         <div class="header-container">
@@ -95,13 +78,13 @@
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="header-icon-link">
                     <ion-icon class="header-icon" name="person-outline"></ion-icon>
-                    <button class="header-btn header-btn-signin" id="sign-in-btn" onclick="myFunction()">
+                    <button class="header-btn header-btn-signin" id="sign-in-btn" onclick="signin()">
                         Sign in
                     </button>
-                    <div class="signin-box">
+                    <div class="signin-box" id="signbox">
                         <p class="signin-box-heading">Sign in</p>
                         <p class="signin-box-text">Enter your email (user ID)</p>
                         <input type="email" placeholder="example@company.com">
@@ -109,59 +92,19 @@
                         <a class="signin-box-heading" href="#">Forgot User ID?</a>
                     </div>
                 </div>
-                <button onclick="myFunction()" class="header-button">
+                <button onclick="openmenu();" class="header-button">
                     <div class="header-button-logo"></div>
                 </button>
             </div>
         </div>
+
         <div class="header-dropdown-menu">
-            <div class="header-dropdown-item">
-                <button>Devices</button>
-                <ion-icon class="dropdown-icon" name="chevron-down-outline"></ion-icon>
-                <div class="dropdown-content1" id="myDropdown1">
-                    <a class="dropdown-first" href="#">Business Radios
-                        <div class="dropdown-content2" id="myDropdown1">
-                            <a href="#">Two-Way Radio Accessories</a>
-                            <a href="#">BodyCameraAccessories</a>
-                            <a href="#">Other Accessories</a>
-                        </div>
-                    </a>
-                    <a href="#">WALKABOUT® Walkie Talkies</a>
-                    <a href="#">oadband Push-to-Talk</a>
-                </div>
-            </div>
-            <div class="header-dropdown-item">
-                <button>Accessories</button>
-                <ion-icon class="dropdown-icon" name="chevron-down-outline"></ion-icon>
-                <div class="dropdown-content1" id="myDropdown1">
-                    <a href="#">Two-Way Radio Accessories</a>
-                    <a href="#">BodyCameraAccessories</a>
-                    <a href="#">Other Accessories</a>
-                </div>
-            </div>
-            <div class="header-dropdown-item">
-                <button>Software & Services</button>
-                <ion-icon class="dropdown-icon" name="chevron-down-outline"></ion-icon>
-                <div class="dropdown-content1" id="myDropdown1">
-                    <a href="#">Software</a>
-                    <a href="#">WAVE Broadband PTT</a>
-                </div>
-            </div>
-            <div class="header-dropdown-item hdi-4">
-                <button>More</button>
-                <ion-icon class="dropdown-icon" name="chevron-down-outline"></ion-icon>
-                <div class="dropdown-content1 dropdown-more" id="myDropdown1">
-                    <a href="#">Quick Order</a>
-                    <a href="#">Saved card</a>
-                    <a href="#">favorites Lists</a>
-                </div>
-            </div>
         </div>
     </header>
     <section class="section-carousel">
         <div class="carousel-container">
             <div class="carousel-item">
-                <img class="carousel-image" src="/Images/img1.jpg">
+                <img class="carousel-image" src="Images/img1.jpg">
                 <div class="carousel-text">
                     <h1>Lorem ipsum, dolor sit amet consectetur</h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sapiente vero ducimus modi!
@@ -225,9 +168,49 @@
                     <option value="">APX4500</option>
                     <option value="">APX4500ENH</option>
                     <option value="">APX5000</option>
+                    <option value="">APX5500</option>
+                    <option value="">APX6000</option>
+                    <option value="">APX6000LI</option>
+                    <option value="">APX6000XE</option>
+                    <option value="">APX6500</option>
+                    <option value="">APX6500/LI</option>
+                    <option value="">APX7000</option>
+                    <option value="">APX7000L</option>
+                    <option value="">APX7000XE</option>
+                    <option value="">APX7500</option>
+                    <option value="">APX8000</option>
+                    <option value="">APX8000H</option>
+                    <option value="">APX8000HSRX</option>
+                    <option value="">APX8000HXE </option>
+                    <option value="">APX8000XE </option>
+                    <option value="">APX8500 </option>
+                    <option value="">APX900</option>
+                    <option value="">APXCONTROLHEAD</option>
+                    <option value="">APXNEXT </option>
+                    <option value="">APXNEXTINTL</option>
+                    <option value="">APXNEXTMULTI</option>
+                    <option value="">APXNEXTSINGLEBAND</option>
+                    <option value="">APXNEXTSINGLEINTL</option>
+                    <option value="">APXNEXTXEMULTI</option>
+                    <option value="">APXNEXTXESINGLEBAND</option>
+                    <option value="">APXNEXTXNALL</option>
+                    <option value="">APXNEXTXNSINGLEBAND</option>
+                    <option value="">ASTRODIGITALSPECTRA</option>
+                    <option value="">ASTROSPECTRAPLUS</option>
+                    <option value="">BC130</option>
+                    <option value="">BPR20</option>
+                    <option value="">BPR40</option>
+                    <option value="">CDM1250</option>
+                    <option value="">CDM1550</option>
+                    <option value="">CDM1550LS</option>
+                    <option value="">CDM1550LSPLUS</option>
+                    <option value="">CDM750</option>
+                    <option value="">CLK446</option>
+                    <option value="">CLP1010</option>
+                    <option value="">CLP1040</option>
                 </select>
                 <div class="shop-links">
-                    <a class="shop-link shop-replcement-link" href="#">replacement part</a>
+                    <a class="shop-replcement-link" href="#">replacement part</a>
                     <a class="shop-link" href="#">shop accessories</a>
                 </div>
             </div>
@@ -242,7 +225,7 @@
                     level of performance.</p>
             </div>
             <div class="image-container">
-                <img class="image-container-image" src="/Images/img8.jpg" alt="walkie talkie">
+                <img class="image-container-image" src="Images/img8.jpg" alt="walkie talkie">
             </div>
             <div class="acc-products">
                 <div class="acc-productcard">
@@ -329,7 +312,18 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="script.js"></script>
+
+
 </body>
 
 </html>
