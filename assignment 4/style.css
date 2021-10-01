@@ -8,9 +8,9 @@ body {
     font-style: Arial;
 }
 
-/* 
-//////////////
-//walkme card//
+/*
+///////////////
+walkme card//
 /////////////// */
 
 .walkme-card {
@@ -22,7 +22,6 @@ body {
     width: 43px;
     z-index: 1005;
     border: 1px solid #999;
-    box-shadow: 0 0 0 5px #77777705;
     transform: translateY(-50%);
     box-shadow: 2px 2px 2px #00000010;
 }
@@ -54,7 +53,7 @@ body {
 
 /* 
 //////////////
-//chat icon//
+/chat icon//
 /////////////// */
 
 .chat-icon {
@@ -75,7 +74,7 @@ body {
 
 /* 
 //////////////
-//menu moble//
+/menu moble//
 /////////////// */
 
 .side-menu {
