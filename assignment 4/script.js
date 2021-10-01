@@ -1,3 +1,4 @@
+//
 var slideIndex = 1;
 var myTimer;
 var slideshowContainer;
