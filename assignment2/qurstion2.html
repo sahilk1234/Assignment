@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 2</title>
+</head>
+
+<body>
+    <button id="btn-0">Button 1!</button>
+    <button id="btn-1">Button 2!</button>
+    <button id="btn-2">Button 3!</button>
+
+    <script type="text/javascript">
+        var prizes = ['mango', 'Apple', 'Strawberry'];
+        for (let i = 0; i < prizes.length; i++) {
+            console.log(prizes[i]);
+        }
+        for (let btnNum = 0; btnNum < prizes.length; btnNum++) {
+            document.getElementById(`btn-${btnNum}`).onclick = function() {
+                console.log(btnNum);
+                alert(prizes[btnNum]);
+                console.log(prizes[btnNum]);
+            };
+        }
+    </script>
+</body>
+
+</html>
