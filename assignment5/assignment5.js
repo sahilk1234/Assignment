@@ -1,13 +1,25 @@
 var val = [];
-var perform1 = ["bob", "alice", "jhon"];
-val["dance"] = 0;
-val["sing"] = 1;
-val["act"] = 2;
-innerHTML = ""
-var output = [Array(3).fill(0), Array(3).fill(0), Array(3).fill(0)];
-var s = "";
 candidates = document.querySelector(".candidates");
 candidate = candidates.querySelectorAll(".candidate");
+var perform1 = [];
+for (let i = 0; i < candidate.length; i++) {
+    var po = candidate[i].querySelector("span").innerHTML;
+    perform1.push(po);
+}
+console.log(perform1);
+opt = candidate[0].querySelector("select");
+for (var i = 0; i < opt.length; i++) {
+    val[`${opt[i].value}`] = i;
+}
+console.log(opt.length);
+console.log(val);
+innerHTML = "";
+var output = [];
+
+for (let i = 0; i < candidate.length; i++) {
+    output.push(Array(opt.length).fill(0))
+}
+var s = "";
 for (let i = 0; i < candidate.length; i++) {
     candidate[i].querySelector("button").onclick = function() {
         let value = candidate[i].querySelector("select").value;
@@ -16,41 +28,21 @@ for (let i = 0; i < candidate.length; i++) {
         }
     }
 }
-var stage1 = document.querySelector(".stage1");
-stage1.querySelector("button").onclick = function() {
-    let value = stage1.querySelector("select").value;
-    var i = val[value];
-    for (let k = 0; k < 3; k++) {
-        if (output[k][i] == 1) {
-            comeToStage("stage1", value, perform(perform1[k], value));
+mainstage = document.querySelector(".mainstage").querySelectorAll("div");
+for (let p = 0; p < mainstage.length; p++) {
+    let stage1 = document.querySelector(`.stage${p+1}`);
+    stage1.querySelector("button").onclick = function() {
+        let value = stage1.querySelector("select").value;
+        let i = val[value];
+        for (let k = 0; k < opt.length; k++) {
+            if (output[k][i] == 1) {
+                comeToStage(`stage${p+1}`, value, perform(perform1[k], value));
+            }
         }
+        stage1.querySelector(`#stage${p+1}`).innerHTML = innerHTML;
+        innerHTML = ""
     }
-    stage1.querySelector("#stage1").innerHTML = innerHTML;
-    innerHTML = ""
-}
-var stage2 = document.querySelector(".stage2");
-stage2.querySelector("button").onclick = function() {
-    let value = stage2.querySelector("select").value;
-    var i = val[value];
-    for (let k = 0; k < 3; k++) {
-        if (output[k][i] == 1) {
-            comeToStage("stage2", value, perform(perform1[k], value));
-        }
-    }
-    stage2.querySelector("#stage2").innerHTML = innerHTML;
-    innerHTML = ""
-}
-var stage3 = document.querySelector(".stage3");
-stage3.querySelector("button").onclick = function() {
-    let value = stage3.querySelector("select").value;
-    var i = val[value];
-    for (let k = 0; k < 3; k++) {
-        if (output[k][i] == 1) {
-            comeToStage("stage3", value, perform(perform1[k], value));
-        }
-    }
-    stage3.querySelector("#stage3").innerHTML = innerHTML;
-    innerHTML = ""
+
 }
 
 function perform(performerName, performerAct) {
