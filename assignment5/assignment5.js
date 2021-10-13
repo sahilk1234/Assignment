@@ -34,7 +34,7 @@ for (let p = 0; p < mainstage.length; p++) {
     stage1.querySelector("button").onclick = function() {
         let value = stage1.querySelector("select").value;
         let i = val[value];
-        for (let k = 0; k < opt.length; k++) {
+        for (let k = 0; k < candidate.length; k++) {
             if (output[k][i] == 1) {
                 comeToStage(`stage${p+1}`, value, perform(perform1[k], value));
             }
