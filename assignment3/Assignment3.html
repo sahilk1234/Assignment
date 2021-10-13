@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        .outer1,
+        .outer2,
+        .outer3 {
+            background-color: powderblue;
+            width: 500px;
+            height: 100px;
+            border: 2px thick black;
+            margin-bottom: 100px;
+            align-items: center;
+        }
+        
+        .inner {
+            float: left;
+            width: 50px;
+            height: 50px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outer1">
+        <div class="inner">
+            <button>Click me 0</button>
+        </div>
+
+        <div class="inner">
+            <button>Click me 0</button>
+        </div>
+
+        <div class="inner">
+            <button>Click me 0</button>
+        </div>
+
+
+
+    </div>
+
+    <div class="outer2">
+        <div class="inner">
+            <button>Click me 0</button>
+        </div>
+        <div class="inner">
+            <button>Click me 0</button>
+        </div>
+        <div class="inner">
+            <button>Click me 0</button>
+        </div>
+    </div>
+
+    <div class="outer3">
+        <div class="inner">
+            <button>Click me 0</button>
+        </div>
+        <div class="inner">
+            <button>Click me 0</button>
+        </div>
+        <div class="inner">
+            <button>Click me 0</button>
+        </div>
+    </div>
+
+</body>
+<script>
+    var outer1 = document.querySelector(".outer1");
+    var inner1 = outer1.querySelectorAll(".inner");
+    var buttoncounter = new Array(inner1.length).fill(0);
+    for (let i = 0; i < inner1.length; i++) {
+        inner1[i].querySelector("button").onclick = () => {
+            buttoncounter[i]++;
+            inner1[i].querySelector("button").innerText = `Click me ${buttoncounter[i]}`;
+        }
+    }
+    var outer2 = document.querySelector(".outer2");
+    var inner2 = outer2.querySelectorAll(".inner");
+    var counter2 = 0;
+    for (let i = 0; i < inner2.length; i++) {
+        inner2[i].querySelector("button").onclick = () => {
+            counter2++;
+            inner2[i].querySelector("button").innerText = `Click me ${counter2}`;
+        }
+    }
+    var outer3 = document.querySelector(".outer3");
+    var inner3 = outer3.querySelectorAll(".inner");
+    var buttoncounter3 = new Array(inner1.length).fill(0);
+    for (let i = 0; i < inner3.length; i++) {
+        inner3[i].querySelector("button").onclick = () => {
+            buttoncounter3[i]++;
+            inner3[i].querySelector("button").innerText = `Click me ${buttoncounter3[i]}`;
+            alert(`button${i+1} value:${buttoncounter3[i]}`);
+        }
+    }
+</script>
+
+</html>

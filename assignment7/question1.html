@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background: none;
+            padding: 10px;
+            color: #fff;
+            background: #111;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="add">add new user</button>
+    <button id="result">displayResult</button>
+    <script>
+        function registerNewAnswer(object) {
+            var opt = prompt(`${object.question}\n ${object.options[0]}\n${object.options[1]}\n${object.options[2]}\n${object.options[3]}`, "write option number");
+            if (opt >= 0 && opt <= 3) {
+                object.answers[opt]++;
+            }
+        }
+
+        function displayResult(type, object) {
+            if (type == "string") {
+                var temp = object.answers;
+                console.log(`"Poll result are ${temp.join(",")}"`);
+                alert(`"Poll result are ${temp.join(",")}"`);
+            } else {
+                console.log("poll result in array:" + object.answers);
+                alert(`poll result in array ${object.answers}`);
+            }
+        }
+        const poll = {
+            question: "What is your favourite programming language?",
+            options: ["0: JavaScript", "1: Python", "2: Rust", "3:C++"],
+            answers: new Array(4).fill(0),
+        };
+        registerNewAnswer(poll);
+        displayResult("string", poll);
+        displayResult("array", poll);
+        document.getElementById("add").onclick = function() {
+            registerNewAnswer(poll);
+            displayResult("string", poll)
+        }
+        document.getElementById("result").onclick = function() {
+            displayResult("string", poll);
+        }
+    </script>
+</body>
+
+</html>
